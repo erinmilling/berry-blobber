@@ -57,12 +57,23 @@ var writeBerries = function (berries) {
     }
     else {
       document.write('no');
-    },
+    }
 
-    document.write('<dt>Size</dt>');
-    document.write('<dd>' + bug.size[0] + '–' + bug.size[1] + ' mm</dd>');
-    document.write('<dt>Eats</dt>');
-  })
+    document.write('</dd>');
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy[0] + ' kJ</dd>');
+    document.write('<dt>Carbs</dt>');
+    document.write('<dd>' + berry.carbs[0] + ' g</dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein[0] + ' g</dd>');
+    document.write('</dl>');
+    document.write('</li>');
+  });
+
+    document.write('</ol>');
+  };
+
+  writeBerries(berries);
 
 
 
