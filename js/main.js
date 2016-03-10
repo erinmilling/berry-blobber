@@ -38,8 +38,12 @@ var redCurrant = {
 var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
 
-  document.write('<ol>')
-}
+  document.write('<ol>');
+
+  berries.forEach(function (berries) {
+    document.write('<li>');
+    document.write('<h2>' + berry.name + '</h2>');
+
 
 
 // ##########################################################
