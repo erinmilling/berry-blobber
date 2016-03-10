@@ -40,9 +40,17 @@ var writeBerries = function (berries) {
 
   document.write('<ol>');
 
-  berries.forEach(function (berries) {
+  berries.forEach(function (berry) {
     document.write('<li>');
     document.write('<h2>' + berry.name + '</h2>');
+    document.write('<dl>');
+    document.write('<dt>Latin</dt>');
+    document.write('<dt>Family</dt>');
+    document.write('<dd><i>' + bug.family + '</i></dd>');
+    document.write('<dt>Size</dt>');
+    document.write('<dd>' + bug.size[0] + '–' + bug.size[1] + ' mm</dd>');
+    document.write('<dt>Eats</dt>');
+  })
 
 
 
