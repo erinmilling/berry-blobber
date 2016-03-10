@@ -42,11 +42,23 @@ var writeBerries = function (berries) {
 
   berries.forEach(function (berry) {
     document.write('<li>');
+
     document.write('<h2>' + berry.name + '</h2>');
+
     document.write('<dl>');
+
     document.write('<dt>Latin</dt>');
-    document.write('<dt>Family</dt>');
-    document.write('<dd><i>' + bug.family + '</i></dd>');
+    document.write('<dd><i>' + berry.latin + '</i></dd>');
+
+    document.write('<dd>');
+
+    if (berry.onShrub.true) {
+      document.write('Yes');
+    }
+    else {
+      document.write('no');
+    },
+
     document.write('<dt>Size</dt>');
     document.write('<dd>' + bug.size[0] + '–' + bug.size[1] + ' mm</dd>');
     document.write('<dt>Eats</dt>');
